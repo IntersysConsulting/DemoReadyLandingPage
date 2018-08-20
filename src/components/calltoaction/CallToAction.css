@@ -1,6 +1,7 @@
 .banner {
   padding: 50px;
   background: url('./../../assets/images/landing.jpg') no-repeat;
+  background-size: cover;
   color:white;
 }
 

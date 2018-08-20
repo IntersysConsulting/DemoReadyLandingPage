@@ -17,11 +17,11 @@ class Sidenav extends Component {
         let categories = []
 
         for (let i = 0 ; i < demos[0].length; i++) {
-            categories.push(demos[0][i].name)
+            categories.push(demos[0][i])
         }
 
-        const listItems = categories.map((category) =>
-            <SideNavItem>{category}</SideNavItem>
+        const listItems = categories.map((demo) =>
+            <SideNavItem href={`/demo-page/${category}/${demo.id}`}>{demo.name}</SideNavItem>
         );
         
         return listItems
@@ -32,7 +32,7 @@ class Sidenav extends Component {
             <div className={`sidenavParent ${this.props.isOpen ? 'open' : ''}`}>
                 <div className="overlay" onClick={e => this.props.toggle() }></div>
                 <ul className={`sidenav`}>
-                    <SideNavItem href='#' header className='sidenav-header'>Categories</SideNavItem>
+                    <SideNavItem header className='sidenav-header'>Categories</SideNavItem>
                     <SideNavItem divider />
                     {this.createSidenavItems()}
                 </ul>

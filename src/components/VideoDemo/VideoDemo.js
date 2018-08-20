@@ -3,11 +3,9 @@ import './VideoDemo.css';
 
 const videoDemo = (props) => (
   <div class="demo video-container">
-    <iframe
-      src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0"
-      title='Video Demo'
-      frameborder="0"
-      allowfullscreen></iframe>
+    <video width="100%" height="100%" controls="true">
+        <source src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" type="video/mp4" />
+      </video>
   </div>
 );
 
