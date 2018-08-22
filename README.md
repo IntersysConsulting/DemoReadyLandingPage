@@ -1,6 +1,28 @@
 ## DemoReadyLandingPage
 
-## Run it with Docker 
+## Run the project locally
+
+You can run this project locally using the next commands. First you need to install all the packages, just run:
+
+```
+npm install
+```
+
+Then, you just need to start the app:
+
+```
+yarn start
+```
+
+Or you can combine both commands:
+
+```
+npm install && yarn dev
+```
+
+Then the app should open in your default browser in the port `3000`. If you already have any app running in said port You'll be ask in the console if you want to use another port, just type `yes` in the console to use another port.
+
+## Or you can run it with Docker 
 
 Build it using `docker build -t landing-page .` 
 Run it using `docker container run -it -p  3000:3000 -v $PWD\src:/app/src  landing-page`
