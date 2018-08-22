@@ -2,7 +2,7 @@ footer.page-footer{
     background-color: var(--grey);
     margin-left: 15px;
     margin: 15px;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 footer.page-footer .footer-copyright{
@@ -36,4 +36,26 @@ footer.page-footer .footer-copyright{
 .social-media li a{
     color: white;
     font-size: 1.6em; 
+}
+
+.page-footer .container{
+    width: 90%;
+}
+
+@media only screen and (max-width: 415px){
+    .footer-links li,
+    .social-media{
+        text-align: center;
+    }
+
+    .footer-links li{
+        display: block;
+        padding-bottom: 3px;
+    }
+
+    .social-media{
+        padding-top: 7px; 
+    }
+
+
 }
