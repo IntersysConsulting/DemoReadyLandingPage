@@ -45,10 +45,6 @@ ul.navbar_intersys div {
   line-height: 50px;
 }
 
-.navbar_intersys .button-collapse i {
-  line-height: 64px !important;
-}
-
 .navbar_intersys li a i {
   font-size: 1.5rem;
 }
@@ -64,36 +60,63 @@ ul.navbar_intersys div {
   padding-left: 10px;
 }
 
-.sessionMenu>a, .sessionMenu>a>i {
-  color: #72C168 !important;
+.navbar_intersys .btn-flat{
+  padding: 0 5px  !important;
+  color: var(--grey);
 }
 
-.dropdown-content {
-  min-width: 180px;
-  text-align: center;
-  left: initial;
-  right: 0;
-  overflow: hidden;
+
+@media only screen and (max-width: 415px){
+  .study span,
+  .demo-video span,
+  .credits span,
+  .stack span{
+    display: none;
+  }
+
+  .study-icon:after{
+    content: 'description';
+  }
+
+  .demo-icon:after{
+    content: 'slideshow';
+  }
+
+  .credits-icon:after{
+    content: 'recent_actors';
+  }
+
+  .stack-icon:after{
+    content: 'storage';
+  }
+
+  .navbar_logo{
+    margin: 0 !important;
+  }
+
+  .home-icon a,
+  .study a,
+  .demo-video a,
+  .credits a,
+  .stack a{
+    padding: 10px 12px !important;
+  }
 }
 
-.dropdown-content li.help:hover a {
-  background-color: #F4F6F9;
-}
+@media only screen and (max-width: 321px){
+  .home-icon a,
+  .study a,
+  .demo-video a,
+  .credits a,
+  .stack a{
+    padding: 10px 10px !important;
+  }
 
-.dropdown-content li.help:hover a, .dropdown-content li.help:hover i {
-  color: #72C168;
-}
+  .navbar_intersys .btn-flat{
+    padding:  0 !important;
+  }
 
-.signOut, .signOut p {
-  background-color: #c2c4c6;
-  transition: background-color 0.5s ease;
-}
-
-.signOut p:hover {
-  background-color: #f88f3d !important;
-  transition: background-color 0.5s ease;
-}
-
-.signOut p, .signOut i {
-  color: #FFF !important;
+  .navbar_logo{
+    height: 30px !important;
+  }
 }

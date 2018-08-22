@@ -1,14 +1,19 @@
-footer{
-    margin-top: 40px;
+footer.page-footer{
+    background-color: var(--grey);
+    margin-left: 15px;
+    margin: 15px;
+    margin-top: 30px;
 }
 
-footer.page-footer{
-    background-color: var(--light-green);
+footer.page-footer .footer-copyright{
+    background-color: white;
+    color: var(--grey)
 }
 
 .footer-copyright{
     text-align: center;
 }
+
 
 .footer-links li,
 .social-media li{
@@ -16,8 +21,12 @@ footer.page-footer{
     padding-right: 30px;
 }
 
-.social-media li{
-    font-size: 1.6em;   
+.footer-links li{
+    font-size: 1.2em;
+}
+
+.grey-text.text-lighten-3:hover{
+    text-decoration: underline;
 }
 
 .social-media{
@@ -26,4 +35,27 @@ footer.page-footer{
 
 .social-media li a{
     color: white;
+    font-size: 1.6em; 
+}
+
+.page-footer .container{
+    width: 90%;
+}
+
+@media only screen and (max-width: 415px){
+    .footer-links li,
+    .social-media{
+        text-align: center;
+    }
+
+    .footer-links li{
+        display: block;
+        padding-bottom: 3px;
+    }
+
+    .social-media{
+        padding-top: 7px; 
+    }
+
+
 }

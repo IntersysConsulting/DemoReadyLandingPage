@@ -21,7 +21,7 @@ class Sidenav extends Component {
         }
 
         const listItems = categories.map((demo) =>
-            <SideNavItem href={`/demo-page/${category}/${demo.id}`}>{demo.name}</SideNavItem>
+            <SideNavItem href={`/demo-page/${category}/${demo.id}/case`}>{demo.name}</SideNavItem>
         );
         
         return listItems

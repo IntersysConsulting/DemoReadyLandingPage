@@ -31,11 +31,11 @@ class HeaderDemo extends Component {
         return [
             <div class="header">
                 <Navbar brand={ <img href="/" className="navbar_logo" src={logo} /> } className='navbar_intersys' right >
-                    <NavItem href='/'><Icon>home</Icon></NavItem>
-                    <NavItem href={'/' + this.cleanUrl() + '/case'}>Case</NavItem>
-                    <NavItem href={'/' + this.cleanUrl() + '/demo'} src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0">Demo</NavItem>
-                    <NavItem href={'/' + this.cleanUrl() + '/credits'}>Credits</NavItem>
-                    <NavItem href={'/' + this.cleanUrl() + '/tech'}>Tech Stack</NavItem>
+                    <NavItem className="home-icon" href='/'><Icon>home</Icon></NavItem>
+                    <NavItem className="study" href={'/' + this.cleanUrl() + '/case'}><span>Case</span><Icon className="study-icon"></Icon></NavItem>
+                    <NavItem className="demo-video" href={'/' + this.cleanUrl() + '/demo'} src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0"><span>Demo</span><Icon className="demo-icon"></Icon></NavItem>
+                    <NavItem className="credits" href={'/' + this.cleanUrl() + '/credits'}><span>Credits</span><Icon className="credits-icon"></Icon></NavItem>
+                    <NavItem className="stack" href={'/' + this.cleanUrl() + '/tech'}><span>Tech Stack</span><Icon className="stack-icon"></Icon></NavItem>
                 </Navbar>  
                  
             </div>
