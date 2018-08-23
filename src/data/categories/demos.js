@@ -1,4 +1,4 @@
-[ 
+module.exports = [
     {
         "category" : "Big Data",
         "id" : "big-data",
@@ -11,7 +11,7 @@
                     "demo" : "https://www.youtube.com/embed/7wdIGEHod8w",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "ingestion-services",
@@ -21,7 +21,7 @@
                     "demo" : "https://www.youtube.com/embed/8TJiOm5KHys",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "warehousing",
@@ -31,7 +31,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "migration-integration",
@@ -41,7 +41,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "data-management",
@@ -51,7 +51,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "data-governance",
@@ -61,7 +61,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             }
         ]
     },
@@ -77,7 +77,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "cognitive-learning",
@@ -87,7 +87,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "visual",
@@ -97,7 +97,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "business-intelligence",
@@ -107,7 +107,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             }
         ]
     },
@@ -123,7 +123,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "native-hybrid-mobile",
@@ -133,7 +133,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "ui-ux",
@@ -143,7 +143,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "ecommerce",
@@ -153,7 +153,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },{
                 "id" : "services-and-apis",
                 "name" : "Services and APIs",
@@ -162,7 +162,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "fullstack-dev",
@@ -172,7 +172,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "app-integration",
@@ -182,7 +182,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "product-engineering",
@@ -192,7 +192,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             }
         ]
     },
@@ -208,7 +208,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "ranking-relevancy",
@@ -218,7 +218,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "natural-language",
@@ -228,7 +228,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "packaged-connectors",
@@ -238,7 +238,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "operations-security",
@@ -248,7 +248,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             }
         ]
     },
@@ -264,7 +264,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "ci-cd",
@@ -274,7 +274,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "microservices",
@@ -284,7 +284,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "qa-automation",
@@ -294,7 +294,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "code-generation",
@@ -304,7 +304,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             }
         ]
 
@@ -321,7 +321,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "implementation",
@@ -331,7 +331,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "service-optimization",
@@ -341,7 +341,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "hybrid-solutions",
@@ -351,7 +351,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             }
         ]
     },
@@ -367,7 +367,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "contract-to-hire",
@@ -377,7 +377,7 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             },
             {
                 "id" : "it-sourcing",
@@ -387,8 +387,8 @@
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
-                }    
+                }
             }
         ]
-    }   
+    }
 ]
