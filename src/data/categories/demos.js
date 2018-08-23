@@ -8,7 +8,7 @@ module.exports = [
                 "name" : "Big Data Storage and Compute",
                 "content" : {
                     "studyCase" : "I am a study case for Big Data storate and compute",
-                    "demo" : "https://www.youtube.com/embed/7wdIGEHod8w",
+                    "demo" : "storage-and-compute",
                     "credits" : "",
                     "techStack" : ""
                 }

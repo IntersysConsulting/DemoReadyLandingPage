@@ -25,19 +25,19 @@ class DemoPage extends Component {
     }
 
     buildComponent = (component, data) => {
-        if (component) {
-            switch (component) {
-                case "demo":
-                    return <VideoDemo demoSrc={data.content.demo}/>
-                case "case":
-                    return <StudyCase description={data.content.studyCase}/>
-                case "credits":
-                    return <Credits/>
-                case "tech":
-                    return <TechStack/>
-                default:
-                    return <h1>No component to render</h1>
-            }
+        if(component){
+           switch(component){
+               case "demo":
+                return <VideoDemo/>
+               case "case":
+                return <StudyCase description={data.content.studyCase} />
+               case "credits":
+                return <Credits/>
+               case "tech":
+                return <TechStack/>
+              default:
+                return <h1>No component tu render</h1>  
+           } 
         }
     }
 
