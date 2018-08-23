@@ -2,23 +2,22 @@ import React, {Component} from 'react'
 
 import "./services.css";
 
+import {connect} from 'react-redux';
+
+import {Row, Container} from 'react-materialize';
+
 import Cardboard from "./../cards/CardBoard";
 import Categories from "./../../categories/categories";
 import CategoriesInfo from "./../../categoriesInfo/categoriesInfo";
-
 import ResponsiveCategories from './../../responsiveCategories/responsiveCategories';
-
-import {Row, Container} from 'react-materialize';
 
 class Services extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      name: null,
-      description: null,
-      cardboard: null,
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
+      selectedCategoryIndex: 0
     }
   }
 
@@ -27,18 +26,11 @@ class Services extends Component {
     this.setState({windowWidth})
   }
 
-  selectCategory = (text) => {
-    const {description, name, cardboard} = this
-      .props
-      .data
-      .find(category => category.name === text)
-
-    this.setState({name, cardboard, description})
+  selectCategory = (index) => {
+    this.setState({selectedCategoryIndex: index})
   }
 
   componentDidMount() {
-    const {name, description, cardboard} = this.props.data[0];
-    this.setState({name, description, cardboard})
     this.handleResize();
     window.addEventListener('resize', this.handleResize);
   }
@@ -47,20 +39,25 @@ class Services extends Component {
     window.removeEventListener('resize', this.handleResize);
   }
 
-  compo
-
   render() {
-    let {windowWidth} = this.state;
+    const {windowWidth, selectedCategoryIndex} = this.state;
+
+    if (!this.props.data || this.props.data.length === 0)
+      return null
+
+    const selectedCategory = this.props.data[selectedCategoryIndex];
 
     if (windowWidth > 768) {
       return (
-        <React.Fragment>
+        <Row>
           <div id='demos' className="services row">
             <Categories data={this.props.data} selectCategory={this.selectCategory}/>
-            <CategoriesInfo description={this.state.description} name={this.state.name}/>
+            <CategoriesInfo
+              description={selectedCategory.description}
+              name={selectedCategory.name}/>
           </div>
-          <Cardboard cardData={this.state.cardboard}/>
-        </React.Fragment>
+          <Cardboard cardData={selectedCategory.cardboard}/>
+        </Row>
       )
     } else {
       return (
@@ -73,8 +70,9 @@ class Services extends Component {
         </Row>
       )
     }
-
   }
 }
 
-export default Services
+const mapStateToProps = state => ({data: state.services})
+
+export default connect(mapStateToProps)(Services);

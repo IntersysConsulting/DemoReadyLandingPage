@@ -1,7 +1,9 @@
 .banner {
   padding: 50px;
   background: url('./../../assets/images/landing.jpg') no-repeat;
+  background-size: cover;
   color:white;
+  height: calc(100vh - 70px);
 }
 
 .banner__video {

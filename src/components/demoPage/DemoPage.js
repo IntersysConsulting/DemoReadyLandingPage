@@ -1,50 +1,55 @@
-import React, { Component } from 'react';
-import HeaderDemo from '../../components/headerDemo/HeaderDemo'
-import { getLocation,
-         getDemoById } from '../../../src/utils.js'
+import React, {Component} from 'react'
+import {connect} from 'react-redux'
+import {withRouter} from 'react-router-dom'
+
+import HeaderDemo from '../headerDemo/HeaderDemo'
+import VideoDemo from '../VideoDemo/VideoDemo'
+import StudyCase from '../StudyCase/StudyCase'
+import Credits from '../credits/Credits'
+import TechStack from '../techStack/TechStack'
 
 import './DemoPage.css';
 
 class DemoPage extends Component {
 
-    getLocationKeywords = () => {
-        let locationKeywords = getLocation();
-
-        return locationKeywords
-    }
-    
     constructor(props) {
         super(props)
-
-        let dataLocation = this.getLocationKeywords()
-        let id = dataLocation[2]
-        let category = dataLocation[1]
-        let demoData = getDemoById(category, id)
+        const {category, demoId, component} = props.match.params;
+        const {demos} = props
+            .demos
+            .find(demo => demo.id === category)
 
         this.state = {
-            credits : demoData.content.credits,
-            techStack : demoData.content.techStack,
-            demo : demoData.content.demo,
-            studyCase : demoData.content.studyCase,
-            id : demoData.id,
-            name : demoData.name
+            renderedComponent: this.buildComponent(component, demos.find(demo => demo.id === demoId))
         }
-
-        this.getLocationKeywords = this.getLocationKeywords.bind(this);
     }
 
-    componentDidMount() {
-        
+    buildComponent = (component, data) => {
+        if (component) {
+            switch (component) {
+                case "demo":
+                    return <VideoDemo demoSrc={data.content.demo}/>
+                case "case":
+                    return <StudyCase description={data.content.studyCase}/>
+                case "credits":
+                    return <Credits/>
+                case "tech":
+                    return <TechStack/>
+                default:
+                    return <h1>No component to render</h1>
+            }
+        }
     }
 
     render() {
-        return [
+        return (
             <div>
-                <HeaderDemo></HeaderDemo>
-                {this.props.children}
+                <HeaderDemo/> {this.state.renderedComponent}
             </div>
-        ]
+        );
     }
 }
 
-export default DemoPage;
+const mapStateToProps = ({demos}) => ({demos})
+
+export default withRouter(connect(mapStateToProps)(DemoPage))

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Credits.css';
-import DemoPage from '../demoPage/DemoPage';
 import ConsultantCard from '../consultantCard/consultantCard'
 import Row from '../../../node_modules/react-materialize/lib/Row';
 
@@ -14,7 +13,7 @@ const credits = (props) => (
                     </Row>
                 </div>
             </div>
-            
-        ); 
+
+        );
 
 export default credits;
