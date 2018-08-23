@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './footer.css';
-import {Footer, Icon} from 'react-materialize'
+import {Footer} from 'react-materialize'
 import { FaFacebookSquare, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 
 class Credits extends Component {
@@ -14,7 +14,7 @@ class Credits extends Component {
                     <li><a href='https://www.linkedin.com/company/intersys-consulting-inc-'><FaLinkedin /></a></li>
 
                 </ul>
-                
+
             }
             >
             <ul className='footer-links'>

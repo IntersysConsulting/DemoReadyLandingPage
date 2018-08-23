@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import {Button, Parallax, Row} from 'react-materialize';
+import {Button} from 'react-materialize';
 import './CallToAction.css'
-
-import landing from "../../assets/images/landing.jpg";
 
 class CallToAction extends Component {
   render() {

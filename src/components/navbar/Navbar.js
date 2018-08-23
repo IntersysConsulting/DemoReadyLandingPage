@@ -21,17 +21,17 @@ class Navbar extends Component {
     const { brand, className, fixed, left, right, href, ...other } = this.props;
     delete other.options;
 
-    let classes = {
-      right: right
-    };
+    // let classes = {
+    //   right: right
+    // };
 
-    let brandClasses = {
-      'brand-logo': true,
-      right: left
-    };
+    // let brandClasses = {
+    //   'brand-logo': true,
+    //   right: left
+    // };
 
     let content = (
-        
+
       <nav {...other} className={'navbar_intersys'}>
         <div className="row">
           <Col s={12}>
