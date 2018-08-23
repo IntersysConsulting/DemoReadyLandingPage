@@ -1,6 +1,13 @@
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 50px auto;
     width: 70%;
+}
+
+.stack-logo{
+    display: inline-block;
+}
+.stack-logo img{
+    max-height: 70px;
+    margin: 5px 10px;
 }
