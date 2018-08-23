@@ -6,12 +6,12 @@ export default (props) => {
   return (
     <div className="categories col s12 m6">
       {
-        props.data.map(category => {
+        props.data.map((category,index) => {
           return (
           <div
-          key={category.name}
+          key={index}
           className="categories__single-category col s12 m4 center-align"
-          onClick={()=> props.selectCategory(category.name)}>
+          onClick={()=> props.selectCategory(index)}>
             <img
             className="categories__image"
             src={require(`./../../assets/svg/${category.image}.svg`)}

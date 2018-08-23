@@ -1,6 +1,5 @@
 import React from 'react';
 import './Credits.css';
-import DemoPage from '../demoPage/DemoPage';
 import ConsultantCard from './consultantCard'
 import edgarMunoz from './../../assets/images/consultants/edgar-munoz.JPG'
 import davidBarriga from './../../assets/images/consultants/david-barriga.JPG'
@@ -34,7 +33,7 @@ const credits = (props) => (
                     </Row>
                 </div>
             </div>
-            
-        ); 
+
+        );
 
 export default credits;

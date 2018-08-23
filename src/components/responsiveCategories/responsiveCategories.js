@@ -10,9 +10,10 @@ const ResponsiveCategories = (props) => {
     >
       {props
         .data
-        .map(category => {
+        .map((category,index) => {
           return (
             <CollapsibleItem
+              key={index}
               header={category
               .name
               .toUpperCase()}>
