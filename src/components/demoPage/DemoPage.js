@@ -23,7 +23,7 @@ class DemoPage extends Component {
         if(component){
            switch(component){
                case "demo":
-                return <VideoDemo demoSrc={data.content.demo} />
+                return <VideoDemo/>
                case "case":
                 return <StudyCase description={data.content.studyCase} />
                case "credits":
