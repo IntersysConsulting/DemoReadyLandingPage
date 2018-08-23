@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "name": "bigdata",
     "image": "data-01",
