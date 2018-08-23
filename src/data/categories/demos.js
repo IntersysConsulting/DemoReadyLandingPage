@@ -93,7 +93,7 @@ module.exports = [
                 "id" : "visual",
                 "name" : "Visual Analytics",
                 "content" : {
-                    "studyCase" : "",
+                    "studyCase" : "../../assets/studyCases/studyCaseDashboard.png",
                     "demo" : "",
                     "credits" : "",
                     "techStack" : ""
