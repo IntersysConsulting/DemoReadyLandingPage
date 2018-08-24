@@ -3,7 +3,7 @@ import './StudyCase.css';
 
 const studyCase = ({description}) =>(
       <div> 
-        <img src={description} className="img"/>
+        <img src={description} alt="studycase" className="img"/>
       </div>
     );
 
