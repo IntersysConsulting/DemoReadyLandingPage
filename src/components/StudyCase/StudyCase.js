@@ -1,11 +1,9 @@
 import React from 'react';
 import './StudyCase.css';
-import image from '../../assets/studyCases/studyCaseDashboard.png'
 
-
-const studyCase = () =>(
+const studyCase = ({description}) =>(
       <div> 
-        <img src={image} className="img"/>
+        <img src={description} className="img"/>
       </div>
     );
 
