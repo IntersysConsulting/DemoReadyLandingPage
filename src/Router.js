@@ -8,6 +8,7 @@ const router = (props) =>(
           <BrowserRouter>
             <Switch>
               <Route exact path='/' component={App} />
+              <Route path='/:category' component={App} />
               <Route path='/demo-page/:category/:demoId/:component' component={DemoPage} />
             </Switch>
           </BrowserRouter>
