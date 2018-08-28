@@ -97,4 +97,8 @@
   .categories__cardboard {
     width: 1000px;
   }
+
+  .categories__tab {
+    width: initial;
+  }
 }
