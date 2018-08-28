@@ -1,0 +1,16 @@
+.navbar_intersys-menu {
+  margin-left: auto; }
+
+.navbar_intersys .intersys-logo {
+  position: relative; }
+
+.navbar_intersys .col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.navbar_intersys .btn-flat {
+  padding: 0 15px; }
+  .navbar_intersys .btn-flat .material-icons {
+    height: 36px;
+    line-height: 36px; }
