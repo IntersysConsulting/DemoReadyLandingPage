@@ -48,7 +48,7 @@ const createCarboard = (cardboard) => (cardboard.map((card, index) => (
 class Categories extends Component {
   render() {
     return (
-      <Row>
+      <Row id="demos">
         <Tabs className="categories__tabs z-depth-1">
           {this
             .props
