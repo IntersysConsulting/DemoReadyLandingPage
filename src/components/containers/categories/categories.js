@@ -14,17 +14,17 @@ const createTab = (category) => (
   active={category.name === defaultCategory}
   title={category.name}
   className='categories__tab'>
-  <Row>
-    <div className='col s4 categories__info-container'>
-      <h1 className='categories__title'>
+  <Row className="categories__container">
+    <div className="categories__info">
+      <h1 className="categories__title">
         {category.name}
       </h1>
-      <div className='categories__underline'></div>
-      <p className='categories__description'>
+      <div className="categories__underline"></div>
+      <p className="categories__description">
         {category.description}
       </p>
     </div>
-    <div className='col s8 categories__cardboard'>
+    <div className="categories__cardboard">
       <Row>
         {createCarboard(category.cardboard)}
       </Row>
@@ -49,7 +49,7 @@ class Categories extends Component {
   render() {
     return (
       <Row>
-        <Tabs className='categories__tabs z-depth-1'>
+        <Tabs className="categories__tabs z-depth-1">
           {this
             .props
             .categories
