@@ -15,24 +15,16 @@
 
 .stack-title div,
 .logos {
-  background-color: var(--light-blue);
+  background-color: var(--light-grey);
   text-transform: uppercase; }
 
-.stack-title2 div,
-.logos.light {
-  background-color: var(--light-green);
-  text-transform: uppercase; }
-
-.stack-title div,
-.stack-title2 div {
-  font-size: 20px;
-  height: 100%;
-  border-radius: 5px;
-  margin: 0 auto;
-  padding-top: 35%;
+.stack-title{
+  display: block;
+  font-size: 40px;
+  margin: 0 auto 15px auto;
   font-weight: bold;
-  color: white; }
+  color: var(--light-blue); }
 
 .center .logos {
-  border-radius: 5px;
+  /* border-radius: 5px; */
   padding: 15px 0; }

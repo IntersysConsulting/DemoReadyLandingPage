@@ -15,8 +15,8 @@ import github from "./../../assets/images/stack/github.png";
 const techStack = (props) => (
              <div className='center'>
                 <Row>
-                    <Col s={12} m={12} l={2} className='stack-title'><div>Web</div></Col>
-                    <Col s={12} m={12} l={10} className='logos'>
+                    <Col s={12} m={12} l={12} className='logos hoverable'>
+                        <div className='stack-title'>Web</div>
                         <div className='stack-logo'><img src={reactLogo} ></img></div>
                         <div className='stack-logo'><img src={htmlLogo} ></img></div>
                         <div className='stack-logo'><img src={cssLogo} ></img></div>
@@ -27,14 +27,8 @@ const techStack = (props) => (
                     </Col>
                 </Row>
                 <Row>
-                    <Col s={12} m={12} l={2} className='stack-title'><div>Infra</div></Col>
-                    <Col s={12} m={12} l={10} className='logos'>
-                        <div className='stack-logo'><img src={docker}></img></div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col s={12} m={12} l={2} className='stack-title'><div>Collaboration</div></Col>
-                    <Col s={12} m={12} l={10} className='logos'>
+                    <Col s={12} m={12} l={12} className='logos hoverable'>
+                    <div className='stack-title'>Collaboration</div>
                         <div className='stack-logo'><img src={github}></img></div>
                     </Col>
                 </Row>
