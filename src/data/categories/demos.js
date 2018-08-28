@@ -5,7 +5,7 @@ module.exports = [{
         "id": "storage-and-compute",
         "name": "Big Data Storage and Compute",
         "content": {
-          "studyCase": "I am a study case for Big Data storate and compute",
+          "studyCase": "/studyCases/Dashboards_Storyboard.pdf",
           "demo": "storage-and-compute",
           "credits": "",
           "techStack": ""
