@@ -8,8 +8,8 @@ import Categories from "./components/containers/categories/categories"
 
 const App = () => (
     <div>
-      <Header></Header>
-      <CallToAction></CallToAction>
+      <Header/>
+      <CallToAction/>
       <Categories/>
       <footer id="partner">
         <Partnership/>
