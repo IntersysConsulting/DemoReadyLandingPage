@@ -1,6 +1,6 @@
 module.exports = [{
-    "category": "Big Data",
-    "id": "big-data",
+    "category": "Analytics",
+    "id": "analytics",
     "demos": [
       {
         "id": "data-visualization",
@@ -27,12 +27,12 @@ module.exports = [{
     ]
   },
   {
-    "category": "Testing",
-    "id": "testing",
+    "category": "Agile",
+    "id": "agile",
     "demos": [
       {
         "id": "test-cafe-automation",
-        "name": "Testing Automation",
+        "name": "Test Cafe",
         "content": {
           "demo": "",
           "credits": [{
@@ -57,7 +57,7 @@ module.exports = [{
     "category": "Digital",
     "id": "digital",
     "demos": [{
-        "id": "dashboards-web-dev",
+        "id": "dashboards",
         "name": "Dashboards",
         "content": {
           "demo": "/videos/storage-and-compute.mp4",
