@@ -20,6 +20,8 @@ module.exports = [{
             "photo" : "",
             "bioLink" : "https://www.intersysconsulting.com/emmanuel-vallejo/"
           }],
+          "stack": [{
+          }]
         }
       }
     ]
@@ -45,6 +47,8 @@ module.exports = [{
             "photo" : "",
             "bioLink" : "https://www.intersysconsulting.com/irving-gomez/"
           }],
+          "stack": [{
+          }]
         }
       },
     ]
@@ -75,6 +79,23 @@ module.exports = [{
             "photo" : "",
             "bioLink" : "https://www.intersysconsulting.com/gustavo-mejia/"
           }],
+          "stack": [{
+            "name": "Web",
+            "tech": {
+              "image1": "react.png",
+              "image2": "html5.png",
+              "image3": "css.png",
+              "image4": "js-logo.png",
+              "image5": "materialize.jpg",
+              "image6": "primereact.png",
+              "image7": "react-d3.png"},
+          },
+          {
+            "name": "Collaboration",
+            "tech": {
+              "image1": "github.png"
+            }
+          }]
         }
       }
     ]
