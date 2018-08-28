@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux'
 import demos from './demos'
-import services from './services'
+import categories from './categories'
 
 const rootReducer = combineReducers({
     demos,
-    services
+    categories
 })
 
 export default rootReducer
