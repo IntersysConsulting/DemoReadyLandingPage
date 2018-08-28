@@ -1,0 +1,35 @@
+.horizontal {
+  max-height: 200px; }
+
+.horizontal .card-content div {
+  text-align: left; }
+
+.horizontal .card-content div h1 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+
+.horizontal .card-content div h2 {
+  font-size: 1.1vw; }
+
+.horizontal .card-action {
+  background-color: var(--green);
+  text-align: center; }
+
+.horizontal .card-action a {
+  color: white !important;
+  margin-right: 0 !important; }
+
+.horizontal .card-image img {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover; }
+
+@media only screen and (max-width: 415px) {
+  .horizontal .card-content div h1 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .horizontal .card-content div h2 {
+    font-size: 15px; }
+  .horizontal .card-action {
+    padding: 10px 24px; } }

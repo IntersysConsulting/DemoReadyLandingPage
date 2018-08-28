@@ -55,7 +55,7 @@ module.exports = [
       "title": "Test Cafe",
       "description":
         "As the concepts of quality and testing evolve in technology, so have the expectations on the makeup of the talent. Gone are the days of manually testing applications, and the tools for automating quality have evolved massively.  Intersys brings a blend of cutting edge tools and sophisticated development engineering talent to drive modern quality solutions.s",
-      "linkTo": "/demo-page/digital/dashboards/case",
+      "linkTo": "/demo-page/agile/test-cafe-automation/case",
       "linkText": "Learn More"
     }]
   },
