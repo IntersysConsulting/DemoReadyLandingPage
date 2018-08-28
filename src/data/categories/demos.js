@@ -8,7 +8,7 @@ module.exports = [{
         "content": {
           "studyCase" : "/studyCases/Data_Visualization.pdf",
           "demoLink" :  "https://intersysconsulting.github.io/dashboards-app/",
-          "demo": "/videos/storage-and-compute.mp4",
+          "demo": "/videos/Power_BI.mp4",
           "credits": [{
             "consultantName" : "Leonardo Vallin",
             "role" : "SSIS Development",
