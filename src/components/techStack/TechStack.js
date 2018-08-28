@@ -27,8 +27,8 @@ const techStack = (props) => (
                     </Col>
                 </Row>
                 <Row>
-                    <Col s={12} m={12} l={2} className='stack-title2 '><div>Infra</div></Col>
-                    <Col s={12} m={12} l={10} className='logos light'>
+                    <Col s={12} m={12} l={2} className='stack-title'><div>Infra</div></Col>
+                    <Col s={12} m={12} l={10} className='logos'>
                         <div className='stack-logo'><img src={docker}></img></div>
                     </Col>
                 </Row>
