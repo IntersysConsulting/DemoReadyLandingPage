@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './StudyCase.css';
 import { Document, Page } from 'react-pdf';
 import { KEY_UP,KEY_RIGHT,KEY_DOWN,KEY_LEFT} from 'keycode-js'
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+
 
 class StudyCase extends Component {
   state = {
@@ -53,15 +55,18 @@ class StudyCase extends Component {
     const { pageNumber, numPages } = this.state;
  
     return (
-      <div className="study-case row">
-        <Document className="col s12 m4 l8" scale="2.0"
+      <div>
+      <div className="container">
+        <Document rotate="0"
           file={this.props.description}
           onLoadSuccess={this.onDocumentLoad}
         >
-          <Page pageNumber={pageNumber} />
+          <Page className="" pageNumber={pageNumber} />
         </Document>
-        <p>Page {pageNumber} of {numPages}</p>
       </div>
+      <div className="row case-footer">
+        <p>Page {pageNumber} of {numPages}</p>
+      </div></div>
     );
   }
 }
