@@ -12,13 +12,13 @@ module.exports = [{
         "credits": [{
           "consultantName": "Leonardo Vallin",
           "role": "SSIS Development",
-          "photo": "",
+          "photo": "leonardo-vallin.JPG",
           "bioLink": "https://www.intersysconsulting.com/leonardo-vallin/"
         },
         {
           "consultantName": "Emmanuel Vallejo",
           "role": "SSIS Development",
-          "photo": "",
+          "photo": "emmanuel-vallejo.JPG",
           "bioLink": "https://www.intersysconsulting.com/emmanuel-vallejo/"
         }],
         "stack": [{
@@ -54,13 +54,13 @@ module.exports = [{
         "credits": [{
           "consultantName": "Christian Medinilla",
           "role": "",
-          "photo": "",
+          "photo": "christian-medinilla.JPG",
           "bioLink": "https://www.intersysconsulting.com/christian-medinilla/"
         },
         {
           "consultantName": "Irving Gomez",
           "role": "",
-          "photo": "",
+          "photo": "irving-gomez.JPG",
           "bioLink": "https://www.intersysconsulting.com/irving-gomez/"
         }],
         "stack": [{
@@ -81,19 +81,19 @@ module.exports = [{
       "credits": [{
         "consultantName": "Edgar Muñoz",
         "role": "Web Developer",
-        "photo": "",
+        "photo": "edgar-munoz.JPG",
         "bioLink": "https://www.intersysconsulting.com/edgar-munoz/"
       },
       {
         "consultantName": "David Barriga",
         "role": "UI Developer",
-        "photo": "",
+        "photo": "david-barriga.JPG",
         "bioLink": "https://www.intersysconsulting.com/david-barriga/"
       },
       {
         "consultantName": "Gustavo Mejia",
         "role": "Project Supervisor",
-        "photo": "",
+        "photo": "gustavo-mejia.JPG",
         "bioLink": "https://www.intersysconsulting.com/gustavo-mejia/"
       }],
       "stack": [{
