@@ -6,8 +6,9 @@ module.exports = [{
         "id": "data-visualization",
         "name": "Data Visualization",
         "content": {
+          "studyCase" : "/studyCases/Data_Visualization.pdf",
           "demoLink" :  "https://intersysconsulting.github.io/dashboards-app/",
-          "demo": "/videos/storage-and-compute.mp4",
+          "demo": "/videos/Power_BI.mp4",
           "credits": [{
             "consultantName" : "Leonardo Vallin",
             "role" : "SSIS Development",
@@ -32,8 +33,9 @@ module.exports = [{
     "demos": [
       {
         "id": "test-cafe-automation",
-        "name": "Test Cafe",
+        "name": "Test Cafe Automation",
         "content": {
+          "studyCase" : "/studyCases/Storyboard_Automation.pdf",
           "demo": "",
           "credits": [{
             "consultantName" : "Christian Medinilla",
@@ -60,6 +62,7 @@ module.exports = [{
         "id": "dashboards",
         "name": "Dashboards",
         "content": {
+          "studyCase": "/studyCases/Dashboards_Storyboard.pdf",
           "demo": "/videos/storage-and-compute.mp4",
           "credits": [{
             "consultantName" : "Edgar Muñoz",

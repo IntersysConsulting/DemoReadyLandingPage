@@ -8,7 +8,7 @@ const header = () => (
             <NavItem href='#call-to-action'><Icon>home</Icon></NavItem>
             <NavItem href='#demos'>Demos</NavItem>
             <NavItem href='#partner'>Partnership</NavItem>
-            <NavItem href='/'>About Us</NavItem>
+            <NavItem href='https://www.intersysconsulting.com/company/'>About Us</NavItem>
         </Navbar>
 );
 
