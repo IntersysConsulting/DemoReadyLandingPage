@@ -1,4 +1,4 @@
-.study-case {
+p.row {
   /* position: relative; */
   overflow: hidden;
   padding: 10px 0 0;
@@ -8,10 +8,8 @@
   padding: 0;
 }
 
-.react-pdf__Page__canvas {
-  margin: 0 auto;
-  /* width: 100vw !important; */
-  /* height: 100vh !important; */
+@media only screen and (max-width: 960px) {
+
 }
 
 #increase-btn, #decrease-btn {
@@ -25,6 +23,11 @@
   z-index: 0;
 }
 
+canvas.react-pdf__Page__canvas  {
+    width: 100% !important;
+    height: 100% !important;
+}
+
 #increase-btn:hover, #decrease-btn:hover {
   transition: background-color .3s;
   background-color: rgba(0, 0, 0, 0.04);
@@ -32,8 +35,17 @@
 
 #increase-btn {
   right: 0;
+  }
+.case-footer {
+    background-color: #eff0f1;
 }
 
 #decrease-btn {
   left: 0;
+}
+
+.case-footer p {
+    padding: 20px;
+    align-content: center;
+    text-align: center;
 }

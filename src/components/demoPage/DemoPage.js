@@ -26,16 +26,18 @@ class DemoPage extends Component {
 
     buildComponent = (component, data) => {
         if(component){
-          const {demo,studyCase} = data.content;
+          const {demo, studyCase, stack, credits} = data.content;
+          console.log(component)
+
            switch(component){
                case "demo":
                 return <VideoDemo video={demo}/>
                case "case":
                 return <StudyCase description={studyCase} />
                case "credits":
-                return <Credits/>
+                return <Credits credits={credits}/>
                case "tech":
-                return <TechStack/>
+                return <TechStack stack={stack}/>
               default:
                 return <h1>No component to render</h1>  
            } 

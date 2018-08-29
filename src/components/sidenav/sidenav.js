@@ -34,7 +34,7 @@ class Sidenav extends Component {
                     .props
                     .toggle()}></div>
                 <ul className={`sidenav`}>
-                    <SideNavItem className='sidenav-header'>Categories</SideNavItem>
+                    <SideNavItem className='sidenav-header'>Demos</SideNavItem>
                     <SideNavItem divider/> {this.createSidenavItems()}
                 </ul>
             </div>
