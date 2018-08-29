@@ -3,6 +3,7 @@ import './StudyCase.css';
 import {Document, Page} from 'react-pdf';
 import {KEY_UP, KEY_RIGHT, KEY_DOWN, KEY_LEFT} from 'keycode-js'
 import 'react-pdf/dist/Page/AnnotationLayer.css';
+import {Icon} from 'react-materialize'
 
 const styles = ({
   page: {
@@ -76,13 +77,12 @@ class StudyCase extends Component {
     const {pageNumber, numPages} = this.state;
 
     return (
-      <div>
-      <div className="container">
-        <Document rotate="0"
+      <div className="study-case container">
+        <Document
+          rotate="0"
           file={this.props.description}
           onLoadSuccess={this.onDocumentLoad}>
           <Page pageNumber={pageNumber} style={styles.section}/>
-          <Page className="" pageNumber={pageNumber} />
           <button id='decrease-btn' onClick={this.decreasePageNum}>
             <Icon>arrow_back_ios</Icon>
           </button>
@@ -91,11 +91,11 @@ class StudyCase extends Component {
             <Icon>arrow_forward_ios</Icon>
           </button>
         </Document>
-          of {numPages}</p>
+        <div className="case-footer">
+          <p>Page {pageNumber}
+            of {numPages}</p>
+        </div>
       </div>
-      <div className="row case-footer">
-        <p>Page {pageNumber} of {numPages}</p>
-      </div></div>
     );
   }
 }
