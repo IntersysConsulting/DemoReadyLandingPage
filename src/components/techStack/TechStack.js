@@ -11,13 +11,12 @@ const techStack = ({stack}) => (
                 <Row>
                     <Col s={12} m={12} l={12} className='stack-bar hoverable'>
                         <div className='stack-title'>{stack.name}</div>
-                        {stack.tech.map(img => (
+                        {!stack.tech ? null : stack.tech.map(img => (
                             <div className='stack-logo'><img src={`/img/stack/${img}`} ></img></div>
                         ))}
                     </Col>
                 </Row>
-            ))
-}
+            ))}
             </div>
         );
 
