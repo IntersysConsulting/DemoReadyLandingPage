@@ -49,7 +49,7 @@ class Sidenav extends Component {
           <div className='sidenav__close' onClick={() => this
           .props
           .toggle()}>
-            <Icon className=''>close</Icon>
+            <Icon>close</Icon>
           </div>
           {this
             .props
