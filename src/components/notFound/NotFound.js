@@ -1,8 +1,10 @@
 import React from "react";
-import { Navbar, NavItem, Icon } from 'react-materialize'
+import { Navbar, NavItem, Icon } from 'react-materialize';
 import './../header/Header.css';
-import './NotFound.css'
+import Footer from './../footer/footer';
+import './NotFound.css';
 import logo from '../../assets/images/intersys-logo.png';
+
 export default () => (
     <div className='not-found'>
     <Navbar brand={<img href="/" alt="navbar logo" className="navbar_logo" src={logo} />} className='navbar_intersys' right>
@@ -22,5 +24,8 @@ export default () => (
                 <a className="button" href="/">Go to homepage</a>
             </div>
         </div>
+        <footer>
+            <Footer />
+        </footer>
     </div>
   );

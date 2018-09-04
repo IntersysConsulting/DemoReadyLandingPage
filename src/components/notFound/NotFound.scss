@@ -8,10 +8,8 @@ html {
     height: 100%;
 }
 .not-found {
-   //background: url(https://i.imgur.com/76NZB7A.gif) no-repeat center center fixed; 
-   //º background: url(https://thumbs.gfycat.com/FickleConsciousAtlanticspadefish-size_restricted.gif) no-repeat center center fixed; 
     background-size: cover;
-    height: 80vh;
+    height: 75vh;
 }
 
 .text-wrapper {
@@ -32,7 +30,6 @@ html {
     font-size: 40px;
     font-weight: 700;
     color: $color3;
-   // text-shadow: 0 0 3px $color3, 0 0 5px #000000;
 }
 
 .buttons {
