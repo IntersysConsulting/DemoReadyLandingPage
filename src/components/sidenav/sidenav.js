@@ -1,50 +1,67 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import { withRouter } from 'react-router-dom'
-
-import {SideNavItem} from 'react-materialize'
-import './sidenav.css';
+import {withRouter} from 'react-router-dom'
 import {createPortal} from 'react-dom'
 
+import {
+  SideNavItem,
+  Collapsible,
+  CollapsibleItem,
+  Collection,
+  CollectionItem,
+  Icon
+} from 'react-materialize'
+
+import './sidenav.css'
+
 class Sidenav extends Component {
-    createSidenavItems = () => {
-        const {category} = this.props.match.params;
+  createSideNavMenuItem = ({name, cardboard}) => (
+    <SideNavItem key={name}>
+      <Collapsible>
+        <CollapsibleItem header={name}>
+          {cardboard.length > 0 && (
+            <Collection>
+              {cardboard.map((demo, i) => <CollectionItem key={i} href={demo.linkTo}>
+                {demo.title}
+              </CollectionItem>)}
+            </Collection>
+          )
+}
+        </CollapsibleItem>
+      </Collapsible>
+    </SideNavItem>
+  )
 
-        const {demos} = this
+  render() {
+    let content = (
+      <div
+        className={`sidenavParent ${this.props.isOpen
+        ? 'open'
+        : ''}`}>
+
+        <div
+          className="overlay"
+          onClick={() => this
+          .props
+          .toggle()}></div>
+
+        <ul className={`sidenav`}>
+          <div className='sidenav__close' onClick={() => this
+          .props
+          .toggle()}>
+            <Icon className=''>close</Icon>
+          </div>
+          {this
             .props
-            .demos
-            .find(demo => demo.id === category);
-
-        return demos.map(demo => (
-            <SideNavItem key={demo.id} href={`/demo-page/${category}/${demo.id}/case`}>
-                {demo.name}
-            </SideNavItem>
-        ));
-    }
-
-    render() {
-        let content = (
-            <div
-                className={`sidenavParent ${this.props.isOpen
-                ? 'open'
-                : ''}`}>
-                <div
-                    className="overlay"
-                    onClick={e => this
-                    .props
-                    .toggle()}></div>
-                <ul className={`sidenav`}>
-                    <SideNavItem className='sidenav-header'>Demos</SideNavItem>
-                    <SideNavItem divider/> {this.createSidenavItems()}
-                </ul>
-            </div>
-
-        )
-
-        return createPortal(content, document.getElementsByTagName('body')[0])
-    }
+            .categories
+            .map(category => this.createSideNavMenuItem(category))}
+        </ul>
+      </div>
+    )
+    return createPortal(content, document.getElementsByTagName('body')[0])
+  }
 }
 
-const mapStateToProps = ({demos}) => ({demos})
+const mapStateToProps = ({demos, categories}) => ({demos, categories})
 
 export default withRouter(connect(mapStateToProps)(Sidenav));

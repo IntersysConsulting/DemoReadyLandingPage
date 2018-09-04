@@ -1,54 +1,69 @@
-.sidenavParent {
+.sidenavParent .collapsible {
+  border: none;
+  box-shadow: none;
+  color: #9e9e9e;
+  font-size: 18px;
+  font-weight: bold; }
+  .sidenavParent .collapsible .collapsible-header {
+    text-transform: capitalize;
+    border-bottom: none; }
+  .sidenavParent .collapsible .collapsible-body {
+    padding: 0;
+    border: none; }
+    .sidenavParent .collapsible .collapsible-body .collection a {
+      font-size: inherit;
+      font-weight: inherit;
+      text-transform: capitalize;
+      margin-left: 15px; }
+    .sidenavParent .collapsible .collapsible-body .collection .collection-item {
+      border: none; }
+
+.sidenavParent .sidenav {
   position: fixed;
+  top: 0;
+  left: -400px;
+  z-index: 9999;
+  background: white;
   height: 100%;
+  width: 400px;
+  padding: 20px 0 0 0;
+  border-right: 1px solid;
+  transition: left 0.35s ease-out;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw; }
+  .sidenavParent .sidenav__close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 15px; }
+    .sidenavParent .sidenav__close i:hover {
+      cursor: pointer; }
+
+.sidenavParent .overlay {
+  background: rgba(0, 0, 0, 0.25);
+  height: 0;
   width: 100%;
-  display: block;
-  z-index: 999; }
-  .sidenavParent.open {
-    opacity: 1; }
-    .sidenavParent.open .sidenav {
-      left: 0;
-      transition: left 0.35s ease-out;
-      font-size: 30px; }
-      .sidenavParent.open .sidenav li:not(.divider) {
-        padding: 20px; }
-        .sidenavParent.open .sidenav li:not(.divider) a {
-          color: #9e9e9e; }
-        .sidenavParent.open .sidenav li:not(.divider) a:hover {
-          color: white; }
-    .sidenavParent.open .overlay {
-      height: 100%;
-      opacity: 1;
-      transition: opacity 0.35s ease-out; }
-  .sidenavParent .sidenav {
-    position: fixed;
-    top: 0;
-    left: -400px;
-    z-index: 9999;
-    background: white;
-    height: 100%;
-    width: 400px;
-    border-right: 1px solid;
-    padding: 20px;
-    transition: left 0.35s ease-out;
-    list-style: none;
-    display: flex;
-    flex-direction: column; }
-    .sidenavParent .sidenav li:not(.divider) {
-      display: flex; }
-      .sidenavParent .sidenav li:not(.divider):hover {
-        background: rgba(0, 0, 0, 0.3);
-        transition: background-color 0.35s ease-out;
-        color: white; }
-    .sidenavParent .sidenav ul.sidenav {
-      font-size: 50px; }
-  .sidenavParent .overlay {
-    background: rgba(0, 0, 0, 0.25);
-    height: 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  transition: opaciy 0.15s ease-out; }
+
+.sidenavParent.open {
+  opacity: 1; }
+  .sidenavParent.open .sidenav {
     left: 0;
-    opacity: 0;
-    cursor: pointer;
-    transition: opaciy 0.15s ease-out; }
+    transition: left 0.35s ease-out;
+    font-size: 30px; }
+    .sidenavParent.open .sidenav li:not(.divider) {
+      border: none; }
+      .sidenavParent.open .sidenav li:not(.divider) a {
+        color: #9e9e9e; }
+  .sidenavParent.open .overlay {
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.35s ease-out; }
