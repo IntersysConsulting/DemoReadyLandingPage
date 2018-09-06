@@ -57,7 +57,12 @@ class Sidenav extends Component {
           {this
             .props
             .categories
-            .map(category => this.createSideNavMenuItem(category))}
+            .map(category => {
+              if(category.cardboard.length > 0){
+               return this.createSideNavMenuItem(category);
+              }
+            }
+            )}
         </ul>
       </div>
     )

@@ -48,7 +48,8 @@
     right: 15px;
     top: 15px; }
     .sidenavParent .sidenav__close i:hover {
-      cursor: pointer; }
+      cursor: pointer; 
+      text-decoration: }
 
 .sidenavParent .overlay {
   background: rgba(0, 0, 0, 0.25);
