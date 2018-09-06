@@ -2,8 +2,16 @@
   border: none;
   box-shadow: none;
   color: #9e9e9e;
-  font-size: 18px;
-  font-weight: bold; }
+  font-size: 25px;
+  font-weight: bold; 
+  padding-right: 30px;
+  margin-right: 25px;}
+  .sidenavHeader { 
+    color: #9e9e9e; 
+    padding-left:15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgrey;
+  } 
   .sidenavParent .collapsible .collapsible-header {
     text-transform: capitalize;
     border-bottom: none; }
@@ -67,3 +75,7 @@
     height: 100%;
     opacity: 1;
     transition: opacity 0.35s ease-out; }
+
+CollapsibleItem:hover {
+  background-color: lightgrey;
+}

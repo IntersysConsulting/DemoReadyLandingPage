@@ -33,6 +33,7 @@ class Sidenav extends Component {
   )
 
   render() {
+    console.log(this.props)
     let content = (
       <div
         className={`sidenavParent ${this.props.isOpen
@@ -46,10 +47,12 @@ class Sidenav extends Component {
           .toggle()}></div>
 
         <ul className={`sidenav`}>
-          <div className='sidenav__close' onClick={() => this
-          .props
-          .toggle()}>
-            <Icon className=''>close</Icon>
+          <div className='sidenavHeader'><h1>CATEGORIES</h1>
+            <div className='sidenav__close' onClick={() => this
+            .props
+            .toggle()}>
+              <Icon className=''>close</Icon>
+            </div>
           </div>
           {this
             .props
