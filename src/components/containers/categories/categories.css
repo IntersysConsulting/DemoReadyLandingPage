@@ -9,11 +9,13 @@
 }
 
 .categories__tabs .tab a:hover {
-  color: var(--light-green);
+  background-color: #F4F6F9;
+  color: #585A61;
 }
 
 .categories__tabs .tab a.active {
-  color: var(--green);
+  background-color: var(--green);
+  color: white;
 }
 
 .categories__tabs li.indicator {

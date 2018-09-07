@@ -1,7 +1,9 @@
 .demo-card {
   background: #fff;
   color: var(--grey);
+  max-width:300px;
 }
+
 .card-action a {
   color: var(--green) !important;
   font-weight: bold;
