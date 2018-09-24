@@ -33,6 +33,13 @@ const createTab = (category) => (
 </Tab>
 )
 
+let addRepoName = (path) => {
+  var repoName = process.env.PUBLIC_URL;
+  var  link = (repoName) ? `${repoName}${path}` : path;
+  
+  return link;
+}
+
 const createCarboard = (cardboard) => (cardboard.map((card, index) => (
   <Col s={4} m={4}>
     <DemoCard
@@ -40,7 +47,7 @@ const createCarboard = (cardboard) => (cardboard.map((card, index) => (
       image={card.image}
       title={card.title}
       description={card.description}
-      linkTo={card.linkTo}
+      linkTo={addRepoName(card.linkTo)}
       linkText={card.linkText}/>
   </Col>
 )))
