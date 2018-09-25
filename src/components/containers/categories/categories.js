@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 
 import {Row, Col, Tabs, Tab} from 'react-materialize'
 import DemoCard from './../../card/DemoCard'
-
+import {addRepoName} from '../../../../src/utils'
 import './categories.css'
 
 const defaultCategory = 'bigdata'
@@ -32,13 +32,6 @@ const createTab = (category) => (
   </Row>
 </Tab>
 )
-
-let addRepoName = (path) => {
-  var repoName = process.env.PUBLIC_URL;
-  var  link = (repoName) ? `${repoName}${path}` : path;
-  
-  return link;
-}
 
 const createCarboard = (cardboard) => (cardboard.map((card, index) => (
   <Col s={4} m={4}>
