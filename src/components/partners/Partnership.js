@@ -41,7 +41,7 @@ export default () => (
       <div key={name} className="partners__container col s6 m2 center-align">
         <img
           className="partners__logo"
-          src={`${addRepoName('/img/partners/logo_')}${img}.${ext}`}
+          src={addRepoName(`/img/partners/logo_${img}.${ext}`)}
           alt={name}
         />
       </div>
