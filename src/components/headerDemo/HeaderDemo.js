@@ -4,23 +4,24 @@ import './HeaderDemo.css';
 import logo from '../../assets/images/intersys-image.png';
 import Navbar from '../../components/navbar/Navbar'
 import {withRouter} from 'react-router-dom'
+import {addRepoName} from '../../../src/utils'
 
 class HeaderDemo extends Component {
     cleanUrl = () => {
         const {category, demoId} = this.props.match.params;
 
-        return `demo-page/${category}/${demoId}`
+        return addRepoName(`demo-page/${category}/${demoId}`);
     }
 
     render() {
         return [
         <div className = "header" > <Navbar
-            brand={< img alt="navbar_logo" href="/" className="navbar_logo" src = {
+            brand={< img alt="navbar_logo" href={addRepoName("/")} className="navbar_logo" src = {
             logo
         } />}
             className='navbar_intersys'
             right>
-            <NavItem className="home-icon" href='/'>
+            <NavItem className="home-icon" href={addRepoName('/')}>
                 <Icon>home</Icon>
             </NavItem>
             <NavItem className="study" href={'/' + this.cleanUrl() + '/case'}>

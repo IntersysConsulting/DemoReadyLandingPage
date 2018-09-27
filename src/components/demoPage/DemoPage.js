@@ -7,6 +7,7 @@ import VideoDemo from '../VideoDemo/VideoDemo'
 import StudyCase from '../StudyCase/StudyCase'
 import Credits from '../credits/Credits'
 import TechStack from '../techStack/TechStack'
+import {addRepoName} from '../../../src/utils'
 
 import './DemoPage.css';
 
@@ -31,9 +32,9 @@ class DemoPage extends Component {
 
            switch(component){
                case "demo":
-                return <VideoDemo video={demo}/>
+                return <VideoDemo video={addRepoName(demo)}/>
                case "case":
-                return <StudyCase description={studyCase} />
+                return <StudyCase description={addRepoName(studyCase)} />
                case "credits":
                 return <Credits credits={credits}/>
                case "tech":
