@@ -4,7 +4,7 @@
 
  export let addRepoName = (path) => {
     var repoName = process.env.PUBLIC_URL;
-    var  link = (repoName) ? `/${repoName}${path}` : path;
+    var  link = (repoName) ? `${repoName}${path}` : path;
     
     return link;
   }
