@@ -1,7 +1,7 @@
 import React from 'react';
 import './TechStack.css';
 import {Col, Row} from 'react-materialize';
-
+import {addRepoName} from '../../../src/utils'
 
 
 const techStack = ({stack}) => (
@@ -12,7 +12,7 @@ const techStack = ({stack}) => (
                     <Col s={12} m={12} l={12} className='stack-bar hoverable'>
                         <div className='stack-title'>{stack.name}</div>
                         {!stack.tech ? null : stack.tech.map(img => (
-                            <div className='stack-logo'><img src={`/img/stack/${img}`} ></img></div>
+                            <div className='stack-logo'><img src={addRepoName(`/img/stack/${img}`)} ></img></div>
                         ))}
                     </Col>
                 </Row>
