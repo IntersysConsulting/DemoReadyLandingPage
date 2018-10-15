@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 
 import {Row, Col, Tabs, Tab} from 'react-materialize'
 import DemoCard from './../../card/DemoCard'
-
+import {addRepoName} from '../../../../src/utils'
 import './categories.css'
 
 const defaultCategory = 'bigdata'
@@ -40,7 +40,7 @@ const createCarboard = (cardboard) => (cardboard.map((card, index) => (
       image={card.image}
       title={card.title}
       description={card.description}
-      linkTo={card.linkTo}
+      linkTo={addRepoName(card.linkTo)}
       linkText={card.linkText}/>
   </Col>
 )))

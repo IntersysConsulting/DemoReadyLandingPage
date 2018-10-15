@@ -1,4 +1,5 @@
 import React from "react";
+import {addRepoName} from '../../../src/utils'
 
 import "./Partnership.css";
 const partners = [
@@ -40,7 +41,7 @@ export default () => (
       <div key={name} className="partners__container col s6 m2 center-align">
         <img
           className="partners__logo"
-          src={`/img/partners/logo_${img}.${ext}`}
+          src={addRepoName(`/img/partners/logo_${img}.${ext}`)}
           alt={name}
         />
       </div>

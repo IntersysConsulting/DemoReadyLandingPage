@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom'
 import {SideNavItem} from 'react-materialize'
 import './sidenav.css';
 import {createPortal} from 'react-dom'
+import {addRepoName} from '../../../src/utils'
 
 class Sidenav extends Component {
     createSidenavItems = () => {
@@ -16,7 +17,7 @@ class Sidenav extends Component {
             .find(demo => demo.id === category);
 
         return demos.map(demo => (
-            <SideNavItem key={demo.id} href={`/demo-page/${category}/${demo.id}/case`}>
+            <SideNavItem key={demo.id} href={addRepoName(`/demo-page/${category}/${demo.id}/case`)}>
                 {demo.name}
             </SideNavItem>
         ));
